@@ -11,9 +11,8 @@ public with sharing class CustomException extends Exception {
         }
     }
 
-    public static void printErrorInfo(String errLocation, Exception err){
-        System.Debug('\n\nError @' + errLocation);
-        System.Debug('Error Message: ' + err.getMessage());
+    public static void printErrorInfo(Exception err){
+        System.Debug('\n\nError Message: ' + err.getMessage());
         System.Debug('Error Line: ' + err.getLineNumber());
     }
 }
