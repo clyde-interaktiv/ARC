@@ -13,14 +13,14 @@
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Attendance URL</shortDescription>
-        <value>https://volunteer.sadeaf.org.sg/</value>
+        <value>https://volunteer.arc.org.sg/</value>
     </labels>
     <labels>
         <fullName>Donation_Programme_URL</fullName>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Donation_Programme_URL</shortDescription>
-        <value>https://donate.sadeaf.org.sg?programme=</value>
+        <value>https://donate.arc.org.sg?programme=</value>
     </labels>
     <labels>
         <fullName>Events_URL</fullName>
@@ -28,7 +28,7 @@
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Events URL</shortDescription>
-        <value>https://events.sadeaf.org.sg/</value>
+        <value>https://events.arc.org.sg/</value>
     </labels>
     <labels>
         <fullName>Landing_URL</fullName>
@@ -36,7 +36,7 @@
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Donation URL</shortDescription>
-        <value>https://donate.sadeaf.org.sg/</value>
+        <value>https://donate.arc.org.sg/</value>
     </labels>
     <labels>
         <fullName>ParticipantDuplicateError</fullName>
