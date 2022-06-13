@@ -1,5 +1,6 @@
 <!-- sldsValidatorIgnore -->
 <template>
+    coba lagi pake bootstrap modal, data-id
     <lightning-button variant="success" label="Show Modal" title="show modal" onclick={handleShowModal} ></lightning-button>
     
     <template if:true={isShowModal}>
@@ -39,7 +40,7 @@
                     <!-- query section -->
                     <lightning-layout-item padding="around-small" size="4">
                         
-                        <table tabindex="-1" >
+                        <table>
                             <tr class="trKey">
                                 <td class="tdKey required-field">From</td>  
                                 <td><lightning-input type="date" name="From Date Filter" value={dateFromValue} onchange={handleDateFromChange} variant="label-hidden" required="true"></lightning-input></td>
