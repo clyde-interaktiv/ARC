@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_Of_Housing__c</fullName>
+    <externalId>false</externalId>
+    <label>Type Of Housing</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HDB 1-room</fullName>
+                <default>false</default>
+                <label>HDB 1-room</label>
+            </value>
+            <value>
+                <fullName>HDB 2-room</fullName>
+                <default>false</default>
+                <label>HDB 2-room</label>
+            </value>
+            <value>
+                <fullName>HDB 3-room</fullName>
+                <default>false</default>
+                <label>HDB 3-room</label>
+            </value>
+            <value>
+                <fullName>HDB 4-room</fullName>
+                <default>false</default>
+                <label>HDB 4-room</label>
+            </value>
+            <value>
+                <fullName>HDB 5-room</fullName>
+                <default>false</default>
+                <label>HDB 5-room</label>
+            </value>
+            <value>
+                <fullName>HDB Executive</fullName>
+                <default>false</default>
+                <label>HDB Executive</label>
+            </value>
+            <value>
+                <fullName>Condo</fullName>
+                <default>false</default>
+                <label>Condo</label>
+            </value>
+            <value>
+                <fullName>Landed Property</fullName>
+                <default>false</default>
+                <label>Landed Property</label>
+            </value>
+            <value>
+                <fullName>Shelter</fullName>
+                <default>false</default>
+                <label>Shelter</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

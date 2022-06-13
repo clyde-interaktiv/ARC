@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Decline_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Decline Reason</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Can not be reached</fullName>
+                <default>false</default>
+                <label>Can not be reached</label>
+            </value>
+            <value>
+                <fullName>Not Suitable</fullName>
+                <default>false</default>
+                <label>Not Suitable</label>
+            </value>
+            <value>
+                <fullName>Did not turn up</fullName>
+                <default>false</default>
+                <label>Did not turn up</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

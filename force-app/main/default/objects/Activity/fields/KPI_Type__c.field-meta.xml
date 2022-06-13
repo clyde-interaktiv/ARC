@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KPI_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>KPI Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Direct Intervention</fullName>
+                <default>false</default>
+                <label>Direct Intervention</label>
+            </value>
+            <value>
+                <fullName>Service Hours</fullName>
+                <default>false</default>
+                <label>Service Hours</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
