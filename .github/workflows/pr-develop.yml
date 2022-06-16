@@ -35,7 +35,7 @@ jobs:
       - name: 'Authorize'
         run: sfdx force:auth:jwt:grant --clientid=${{ secrets.SIT_CONSUMER_KEY }} --instanceurl "https://test.salesforce.com" --username=${{ secrets.SIT_USERNAME }} --jwtkeyfile server.key --setalias=sit-org
       - name: Install SFDX CLI
-        run: npm install -g sfdx-cli
+        run: npm install sfdx-cli --global
       - name: Install SGD
         run: echo y | sfdx plugins:install sfdx-git-delta
       - name: 'Create Delta'
