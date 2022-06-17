@@ -30,7 +30,7 @@ jobs:
         cat package/package.xml
 
     - name: 'Convert to metadata'
-      run: sfdx force:source:convert --manifest=package/package.xml --outputdir=convert
+      run: node_modules/sfdx-cli/bin/run force:source:convert --manifest=package/package.xml --outputdir=convert
 
     - name: 'Decrypt file'
       run: openssl enc -nosalt -aes-256-cbc -d -in assets/server.key.enc -out server.key -base64 -K ${{secrets.DECRYPTION_KEY}} -iv ${{secrets.DECRYPTION_IV}}
