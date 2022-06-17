@@ -6,6 +6,9 @@ on:
   push:
     branches: [ develop ]
 
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -35,8 +38,8 @@ jobs:
     - name: 'Decrypt file'
       run: openssl enc -nosalt -aes-256-cbc -d -in assets/server.key.enc -out server.key -base64 -K ${{secrets.DECRYPTION_KEY}} -iv ${{secrets.DECRYPTION_IV}}
 
-    - name: Authentication to SIT
+    - name: SIT Authentication
       run: node_modules/sfdx-cli/bin/run auth:jwt:grant --clientid=${{ secrets.SIT_CONSUMER_KEY }} --instanceurl "https://test.salesforce.com" --username=${{ secrets.SIT_USERNAME }} --jwtkeyfile server.key --setalias=sit-org
 
-    - name: Deployement to SIT
-      run: node_modules/sfdx-cli/bin/run force:mdapi:deploy --deploydir=convert -u sit-org --wait 60
+    - name: SIT Deployment
+      run: node_modules/sfdx-cli/bin/run force:mdapi:deploy --deploydir=convert -u sit-org --wait 40

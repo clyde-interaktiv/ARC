@@ -2,7 +2,6 @@ public with sharing class CustomException extends Exception {
 
     // Deliberately empty
     public static void exceptionHandling(Database.SaveResult[] saveResult){
-        System.debug('Test delta final 999');
         for(Database.SaveResult item : saveResult){
             if(!item.isSuccess()){
                 for(Database.Error err : item.getErrors()){
