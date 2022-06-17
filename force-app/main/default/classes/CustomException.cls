@@ -2,7 +2,7 @@ public with sharing class CustomException extends Exception {
 
     // Deliberately empty
     public static void exceptionHandling(Database.SaveResult[] saveResult){
-        System.debug('Test2323');
+        System.debug('Test11');
         for(Database.SaveResult item : saveResult){
             if(!item.isSuccess()){
                 for(Database.Error err : item.getErrors()){
