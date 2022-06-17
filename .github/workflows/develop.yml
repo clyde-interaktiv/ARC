@@ -38,6 +38,7 @@ jobs:
         run: |
             git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
             git fetch --all
+            git checkout develop
             git --no-pager diff --name-status HEAD HEAD^
             sfdx sgd:source:delta --to "HEAD" --from "HEAD^" --output .
             cat package/package.xml
