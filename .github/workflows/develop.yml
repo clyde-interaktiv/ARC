@@ -38,11 +38,11 @@ jobs:
         run: |
             git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
             git fetch --all
-            sfdx sgd:source:delta --to "HEAD" --from "origin/development"
+            sfdx sgd:source:delta --to "HEAD" --from "origin/develop"
             cat package/package.xml
       - name: 'Convert Metadata'
         run: sfdx force:source:convert --manifest=package/package.xml --outputdir=convert
         
-      - name: 'Run Test on Metadata'
+      - name: 'Run Deployment on Metadata'
         #run: sfdx force:mdapi:deploy --deploydir=convert --testlevel=RunLocalTests --checkonly -u sit-org 
         run: sfdx force:mdapi:deploy --deploydir=convert -u sit-org --wait 60
