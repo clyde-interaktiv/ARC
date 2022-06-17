@@ -32,6 +32,11 @@
                 <label>Cancelled</label>
             </value>
             <value>
+                <fullName>Reconciled</fullName>
+                <default>false</default>
+                <label>Reconciled</label>
+            </value>
+            <value>
                 <fullName>Ended</fullName>
                 <default>false</default>
                 <label>Ended</label>

@@ -5,7 +5,7 @@
     <externalId>false</externalId>
     <label>Donation Status</label>
     <required>false</required>
-    <trackHistory>false</trackHistory>
+    <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
@@ -14,7 +14,7 @@
             <sorted>false</sorted>
             <value>
                 <fullName>Received</fullName>
-                <default>false</default>
+                <default>true</default>
                 <label>Received</label>
             </value>
             <value>
@@ -28,9 +28,9 @@
                 <label>Cleared</label>
             </value>
             <value>
-                <fullName>Cheque Returned</fullName>
+                <fullName>CC Declined</fullName>
                 <default>false</default>
-                <label>Cheque Returned</label>
+                <label>CC Declined</label>
             </value>
             <value>
                 <fullName>Giro Rejected</fullName>
@@ -38,9 +38,9 @@
                 <label>Giro Rejected</label>
             </value>
             <value>
-                <fullName>CC Declined</fullName>
+                <fullName>Cheque Returned</fullName>
                 <default>false</default>
-                <label>CC Declined</label>
+                <label>Cheque Returned</label>
             </value>
             <value>
                 <fullName>Cancelled</fullName>
@@ -51,6 +51,16 @@
                 <fullName>Refunded</fullName>
                 <default>false</default>
                 <label>Refunded</label>
+            </value>
+            <value>
+                <fullName>Exported</fullName>
+                <default>false</default>
+                <label>Exported</label>
+            </value>
+            <value>
+                <fullName>Reconciled</fullName>
+                <default>false</default>
+                <label>Reconciled</label>
             </value>
         </valueSetDefinition>
         <valueSettings>
@@ -100,6 +110,18 @@
             <controllingFieldValue>Giro</controllingFieldValue>
             <controllingFieldValue>PayNow</controllingFieldValue>
             <valueName>Refunded</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bank Transfer</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>Giro</controllingFieldValue>
+            <valueName>Exported</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bank Transfer</controllingFieldValue>
+            <controllingFieldValue>Credit Card</controllingFieldValue>
+            <controllingFieldValue>Giro</controllingFieldValue>
+            <valueName>Reconciled</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Cheque</controllingFieldValue>

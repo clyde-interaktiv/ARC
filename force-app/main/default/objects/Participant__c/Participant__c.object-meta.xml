@@ -158,7 +158,6 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ControlledByParent</externalSharingModel>
     <label>Participant</label>
     <nameField>
         <displayFormat>P-{0000}</displayFormat>
