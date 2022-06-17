@@ -38,8 +38,8 @@ jobs:
         run: |
             git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
             git fetch --all
-            git --no-pager diff --name-status develop origin/master
-            sfdx sgd:source:delta --to "develop" --from "origin/master" --output .
+            git --no-pager diff --name-status HEAD HEAD^
+            sfdx sgd:source:delta --to "HEAD" --from "HEAD^" --output .
             cat package/package.xml
       - name: 'Convert Metadata'
         run: sfdx force:source:convert --manifest=package/package.xml --outputdir=convert
