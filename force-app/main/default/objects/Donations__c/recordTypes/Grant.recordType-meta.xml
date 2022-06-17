@@ -132,15 +132,15 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>SADeaf Website</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Simply Giving</fullName>
             <default>false</default>
         </values>
         <values>
             <fullName>Walk in</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -174,11 +174,19 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Exported</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Giro Rejected</fullName>
             <default>false</default>
         </values>
         <values>
             <fullName>Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reconciled</fullName>
             <default>false</default>
         </values>
         <values>

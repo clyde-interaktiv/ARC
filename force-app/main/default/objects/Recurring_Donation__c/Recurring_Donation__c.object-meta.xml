@@ -158,7 +158,6 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>Private</externalSharingModel>
     <label>Recurring Donation</label>
     <nameField>
         <displayFormat>RD{yymmdd}{0000}</displayFormat>

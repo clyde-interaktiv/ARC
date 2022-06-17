@@ -158,7 +158,6 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>Private</externalSharingModel>
     <label>Programme/ Event</label>
     <nameField>
         <label>Programme/ Events Name</label>

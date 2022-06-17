@@ -183,6 +183,10 @@
                 <behavior>Edit</behavior>
                 <field>Acquirer_Response_Message__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Reconciled_Date__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
