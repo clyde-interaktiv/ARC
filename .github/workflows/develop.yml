@@ -36,7 +36,9 @@ jobs:
       
       - name: 'Create Delta'
         run: |
-            sfdx sgd:source:delta --to "HEAD" --from "HEAD^" --output .
+            git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
+            git fetch --all
+            sfdx sgd:source:delta --to "HEAD" --from "HEAD^" --repo . --output .
             cat package/package.xml
       - name: 'Convert Metadata'
         run: sfdx force:source:convert --manifest=package/package.xml --outputdir=convert
